@@ -10,7 +10,7 @@ const router = createRouter({
     { path: '/', redirect: '/products' },
     { path: '/products', component: ProductsList },
     { path: '/cart', component: UserCart },
-    { path: '/admin', component: ShopAdmin },
+    { path: '/admin', component: ShopAdmin }
   ]
 });
 

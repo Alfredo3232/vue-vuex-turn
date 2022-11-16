@@ -28,10 +28,10 @@ export default {
         id: this.id,
         image: this.image,
         title: this.title,
-        price: this.price,
+        price: this.price
       });
-    },
-  },
+    }
+  }
 };
 </script>
 

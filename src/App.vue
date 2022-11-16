@@ -41,7 +41,7 @@ export default {
           price: 6.99,
         },
       ],
-      cart: { items: [], total: 0, qty: 0 },
+      cart: { items: [], total: 0, qty: 0 }
     };
   },
   provide() {
@@ -52,7 +52,7 @@ export default {
       addProductToCart: this.addProductToCart,
       removeProductFromCart: this.removeProductFromCart,
       login: this.login,
-      logout: this.logout,
+      logout: this.logout
     };
   },
   methods: {
@@ -91,8 +91,8 @@ export default {
     },
     logout() {
       this.isLoggedIn = false;
-    },
-  },
+    }
+  }
 };
 </script>
 
