@@ -76,7 +76,6 @@ export default {
       this.cart.qty++;
       this.cart.total += productData.price;
     },
-
     removeProductFromCart(prodId) {
       const productInCartIndex = this.cart.items.findIndex(
         (cartItem) => cartItem.productId === prodId
