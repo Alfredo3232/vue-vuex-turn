@@ -26,7 +26,9 @@
 
 <script>
 export default {
-  inject: ['isLoggedIn', 'login', 'logout', 'cart']
+  computed: {
+    
+  }
 };
 </script>
 
