@@ -3,6 +3,7 @@
     <h1>
       <router-link to="/">VueShop</router-link>
     </h1>
+
     <nav>
       <ul>
         <li>
@@ -17,6 +18,7 @@
         </li>
       </ul>
     </nav>
+
     <div>
       <button v-if="!isLoggedIn" @click="login">Login</button>
       <button v-if="isLoggedIn" @click="logout">Logout</button>
@@ -29,6 +31,17 @@ export default {
   computed: {
     cartQuantity() {
       return this.$store.getters['cart/quantity'];
+    },
+    isLoggedIn() {
+      return this.$store.getters.isAuthenticated;
+    }
+  },
+  methods: {
+    login() {
+      this.$store.dispatch('login');
+    },
+    logout() {
+      this.$store.dispatch('logout');
     }
   }
 };
